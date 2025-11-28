@@ -6,6 +6,7 @@
   border-radius: 4px;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 #datetime-picker:hover {
@@ -27,10 +28,11 @@ button {
 }
 
 button:hover {
-  background: #2f6be3;
+  background: #6c8cff;
 }
 
-button:disabled {
+button:disabled,
+input:disabled {
   background: #d6d6d6;
   border: 1px solid #8c8c8c;
   cursor: not-allowed;
