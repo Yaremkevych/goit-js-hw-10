@@ -48,4 +48,5 @@ form.addEventListener('submit', event => {
         messageSize: '18px',
       });
     });
+  form.reset();
 });
