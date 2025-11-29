@@ -17,16 +17,6 @@
   border-color: #4b7cff;
 }
 
-button {
-  color: #fff;
-  width: 94px;
-  height: 40px;
-  border: 1px solid #4e75ff;
-  background-color: #4e75ff;
-  border-radius: 8px;
-  padding: 8px 16px;
-}
-
 button:hover {
   background: #6c8cff;
 }
@@ -35,7 +25,6 @@ button:disabled,
 input:disabled {
   background: #d6d6d6;
   border: 1px solid #8c8c8c;
-  cursor: not-allowed;
   color: #8c8c8c;
 }
 

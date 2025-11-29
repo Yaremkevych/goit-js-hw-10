@@ -22,12 +22,14 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0] <= new Date()) {
-      iziToast.error({
+      iziToast.show({
+        title: '❌',
         message: 'Please choose a date in the future',
+        color: 'red',
         position: 'topCenter',
-        timeout: 1500,
-        transitionIn: 'fadeInUp',
-        transitionOut: 'fadeOut',
+        timeout: 2000,
+        messageColor: 'white',
+        messageSize: '18px',
       });
       refs.startBtn.disabled = true;
       return;
@@ -85,10 +87,14 @@ function startTimer(date) {
     if (diff <= 0) {
       clearInterval(idInterval);
       updateTimer(0);
-      iziToast.success({
-        title: 'OK',
+      iziToast.show({
+        title: '✅',
         message: 'Timer finished!',
+        color: 'green',
         position: 'topCenter',
+        timeout: 2000,
+        messageColor: 'white',
+        messageSize: '18px',
       });
       refs.inputDate.disabled = false;
       return;
